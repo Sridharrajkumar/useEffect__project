@@ -54,7 +54,7 @@ const Login = (props) => {
     dispatchEmail({type:'user_input', val:event.target.value});
 
     setFormIsValid( 
-      event.target.value.include('@') && passwordState.isPassValid
+      event.target.value.includes('@') && passwordState.isPassValid
     );
 
    
